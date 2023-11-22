@@ -13,6 +13,10 @@ const Title = ({ title }) => {
   return <h2 className="title">{title}</h2>;
 };
 const Author = ({ author }) => {
-  return <h4 className="author">{author}</h4>;
+  return (
+    <h4 className="author" style={{ color: "white", letterSpacing: "1px" }}>
+      {author}
+    </h4>
+  );
 };
 export default Book;
