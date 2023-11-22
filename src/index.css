@@ -7,7 +7,18 @@ body {
   width: 100%;
   height: 100vh;
 }
-
+.booklist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+}
+.book-card {
+  border: 2px solid white;
+  height: 20rem;
+  min-width: 18rem;
+  text-align: center;
+}
 /* SPINNY REACT LOGO INNIT */
 .scaler {
   animation: scaler 4s infinite linear;

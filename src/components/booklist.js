@@ -1,7 +1,7 @@
 import Book from "./book.js";
 const Booklist = () => {
   return (
-    <section>
+    <section className="booklist">
       <Book />
       <Book />
       <Book />
