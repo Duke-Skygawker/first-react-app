@@ -27,13 +27,13 @@ body {
     rgba(227, 186, 143, 0.2)
   );
   height: 20rem;
-  min-width: 20rem;
+  width: 20rem;
 }
 
 .book-card img {
   height: 60%;
   object-fit: cover;
-  margin: 0 5rem;
+  margin: 0 6rem;
   margin-top: 2rem;
 }
 .book-card .title {
