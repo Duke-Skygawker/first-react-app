@@ -1,3 +1,4 @@
+import amazon1 from "../images/amazon_1.jpg";
 const Book = () => {
   return (
     <article className="book-card">
@@ -8,11 +9,11 @@ const Book = () => {
   );
 };
 
-const Image = () => <h2>Image Placeholder</h2>;
+const Image = () => <img src={amazon1} alt="" />;
 const Title = () => {
-  return <h2>Book Title</h2>;
+  return <h2 className="title">Book Title</h2>;
 };
 const Author = () => {
-  return <h4>Author</h4>;
+  return <h4 className="author">Author</h4>;
 };
 export default Book;
