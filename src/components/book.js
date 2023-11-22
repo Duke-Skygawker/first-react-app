@@ -1,9 +1,9 @@
-const Book = (props) => {
+const Book = ({ imgSrc, title, author }) => {
   return (
     <article className="book-card">
-      <Image imgSrc={props.imgSrc} />
-      <Title title={props.title} />
-      <Author author={props.author} />
+      <Image imgSrc={imgSrc} />
+      <Title title={title} />
+      <Author author={author} />
     </article>
   );
 };
