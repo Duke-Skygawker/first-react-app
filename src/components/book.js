@@ -1,19 +1,18 @@
-import amazon1 from "../images/amazon_1.jpg";
-const Book = () => {
+const Book = ({ imgSrc, title, author }) => {
   return (
     <article className="book-card">
-      <Image />
-      <Title />
-      <Author />
+      <Image imgSrc={imgSrc} />
+      <Title title={title} />
+      <Author author={author} />
     </article>
   );
 };
 
-const Image = () => <img src={amazon1} alt="" />;
-const Title = () => {
-  return <h2 className="title">Book Title</h2>;
+const Image = ({ imgSrc }) => <img src={imgSrc} alt="" />;
+const Title = ({ title }) => {
+  return <h2 className="title">{title}</h2>;
 };
-const Author = () => {
-  return <h4 className="author">Author</h4>;
+const Author = ({ author }) => {
+  return <h4 className="author">{author}</h4>;
 };
 export default Book;
