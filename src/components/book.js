@@ -1,10 +1,10 @@
-const Book = ({ imgSrc, title, author, getBook }) => {
+const Book = ({ imgSrc, title, author, bookIndex }) => {
   return (
     <article className="book-card">
+      <p className="book-index">{bookIndex}</p>
       <Image imgSrc={imgSrc} />
       <Title title={title} />
       <Author author={author} />
-      <button onClick={() => getBook(title)}>Display Title</button>
     </article>
   );
 };

@@ -30,6 +30,17 @@ body {
   width: 20rem;
 }
 
+.book-index {
+  padding-left: 0.5rem;
+  padding-bottom: 0.2rem;
+  color: white;
+  width: 35px;
+  background-color: orange;
+}
+.book-index::before {
+  content: "#";
+}
+
 .book-card img {
   height: 60%;
   object-fit: cover;
