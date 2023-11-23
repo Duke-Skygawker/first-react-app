@@ -1,9 +1,13 @@
-const Book = ({ imgSrc, title, author }) => {
+const Book = ({ imgSrc, title, author, getBook }) => {
+  const getSingleBook = () => {
+    getBook(title);
+  };
   return (
     <article className="book-card">
       <Image imgSrc={imgSrc} />
       <Title title={title} />
       <Author author={author} />
+      <button onClick={getSingleBook}>Display Title</button>
     </article>
   );
 };

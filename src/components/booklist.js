@@ -21,35 +21,15 @@ const books = [
   },
 ];
 
-const EventExamples = () => {
-  const handleFormInput = () => {
-    console.log("handle form input");
-  };
-  const handleButtonClick = () => {
-    alert("handle button click");
-  };
-  return (
-    <section style={{ margin: "2rem" }}>
-      <form>
-        <h2>Basic Form</h2>
-        <input
-          type="text"
-          name="example"
-          onChange={handleFormInput}
-          style={{ margin: "2rem" }}
-        />
-      </form>
-      <button onClick={handleButtonClick}>Click me</button>
-    </section>
-  );
-};
-
 const Booklist = () => {
+  const getBook = (title) => {
+    const book = books.find((book) => book.title === title);
+    console.log(book);
+  };
   return (
     <section className="booklist">
-      <EventExamples />
       {books.map((book) => {
-        return <Book {...book} key={book.title} />;
+        return <Book {...book} getBook={getBook} key={book.title} />;
       })}
     </section>
   );
